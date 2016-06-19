@@ -6,6 +6,9 @@ public class Calulator {
 		// TODO Auto-generated method stub
 		System.out.println("ffff");
 		System.out.println("hi 장석");
+		System.out.println("hi 장석");
+		System.out.println("hi 장석");
+		System.out.println("hi 장석");
 	}
 
 }
