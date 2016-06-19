@@ -9,6 +9,9 @@ public class Calulator {
 		System.out.println("hi 장석");
 		System.out.println("hi 장석");
 		System.out.println("hi 장석");
+		System.out.println("hi 장석");
+		System.out.println("hi 장석");
+		System.out.println("hi 장석");
 	}
 
 }
