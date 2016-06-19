@@ -20,36 +20,6 @@ public class Calulator extends JFrame implements ActionListener {
 	private double result = 0;
 	private String operator = "=";
 	private boolean startOfNumber = true;
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-}
-public void actionPerformed(ActionEvent e) {
-	String command = e.getActionCommand();
-	if (command.charAt(0) == 'C') {
-		startOfNumber = true;
-		result = 0;
-		operator = "=";
-		display.setText("0.0");
-	} else if (command.charAt(0) >= '0' && command.charAt(0) <= '9'){
-		if (startOfNumber == true)
-			display.setText(command);
-		else
-			display.setText(display.getText() + command);
-		startOfNumber = false;
-	} else {
-		if (startOfNumber) {
-			if (command.equals("-")) {
-				display.setText(command);
-				startOfNumber = false;
-			} else
-				operator = command;
-		} else {
-			double x = Double.parseDouble(display.getText());
-			calculate(x);
-			operator = command;
-=======
  
 	public Calulator() {
 		display = new JTextField(35);
@@ -75,7 +45,6 @@ public void actionPerformed(ActionEvent e) {
 	public void actionPerformed(ActionEvent e) {
 		String command = e.getActionCommand();
 		if (command.charAt(0) == 'C') {
->>>>>>> refs/remotes/origin/Hotfix
 			startOfNumber = true;
 			result = 0;
 			operator = "=";
@@ -101,10 +70,6 @@ public void actionPerformed(ActionEvent e) {
 			}
 		}
 	}
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/Hotfix
-}
-=======
  
 	private void calculate(double n) {
 		if (operator.equals("+"))
@@ -124,4 +89,3 @@ public void actionPerformed(ActionEvent e) {
 		Calulator calculator = new Calulator();
 	}
 }
->>>>>>> refs/remotes/origin/Hotfix
